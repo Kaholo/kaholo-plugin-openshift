@@ -1,0 +1,190 @@
+{
+  "name": "OpenShift",
+  "type": "executer",
+  "imgUrl": "logo.png",
+  "execProgram": "node",
+  "main": "app.js",
+  "version": "1.0.0",
+  "description": "Works with OpenShift API",
+  "settings":[
+    { 
+      "name": "clusterUrl",
+      "viewName": "Cluster URL",
+      "type": "string"
+    },
+    {
+      "name": "user",
+      "viewName": "Username",
+      "type": "string"
+    },
+    {
+      "name": "password",
+      "viewName": "Password",
+      "type": "vault"
+    }
+  ],
+  "methods": [
+    {
+      "name": "apply",
+      "viewName": "Apply",
+      "params": [
+        { 
+          "name": "clusterUrl",
+          "viewName": "Cluster URL",
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "viewName": "Username",
+          "type": "string"
+        },
+        {
+          "name": "password",
+          "viewName": "Password",
+          "type": "vault"
+        },
+        {
+          "name": "filePath",
+          "viewName": "YML/JSON File Path",
+          "type": "string"
+        },
+        {
+          "name": "namespace",
+          "viewName": "Namespace",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "deleteObject",
+      "viewName": "Delete Object",
+      "params": [
+        { 
+          "name": "clusterUrl",
+          "viewName": "Cluster URL",
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "viewName": "Username",
+          "type": "string"
+        },
+        {
+          "name": "password",
+          "viewName": "Password",
+          "type": "vault"
+        },
+        {
+          "name": "types",
+          "viewName": "Types",
+          "type": "text"
+        },
+        {
+          "name": "names",
+          "viewName": "Names",
+          "type": "text"
+        },
+        {
+          "name": "namespace",
+          "viewName": "Namespace",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "listObjects",
+      "viewName": "List Objects",
+      "params": [
+        { 
+          "name": "clusterUrl",
+          "viewName": "Cluster URL",
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "viewName": "Username",
+          "type": "string"
+        },
+        {
+          "name": "password",
+          "viewName": "Password",
+          "type": "vault"
+        },
+        {
+          "name": "category",
+          "viewName": "Category",
+          "type": "autocomplete",
+          "autocompleteType": "function",
+          "functionName": "getCategories"
+        },
+        {
+          "name": "type",
+          "viewName": "Type",
+          "type": "autocomplete",
+          "autocompleteType": "function",
+          "functionName": "getTypes"
+        },
+        {
+          "name": "labelSelectors",
+          "viewName": "Label Selectors",
+          "type": "text"
+        },
+        {
+          "name": "fieldSelectors",
+          "viewName": "Field Selectors",
+          "type": "text"
+        },
+        {
+          "name": "namespace",
+          "viewName": "Namespace",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "getObject",
+      "viewName": "Get Object",
+      "params": [
+        { 
+          "name": "clusterUrl",
+          "viewName": "Cluster URL",
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "viewName": "Username",
+          "type": "string"
+        },
+        {
+          "name": "password",
+          "viewName": "Password",
+          "type": "vault"
+        },
+        {
+          "name": "category",
+          "viewName": "Category",
+          "type": "autocomplete",
+          "autocompleteType": "function",
+          "functionName": "getCategories"
+        },
+        {
+          "name": "type",
+          "viewName": "Type",
+          "type": "autocomplete",
+          "autocompleteType": "function",
+          "functionName": "getTypes"
+        },
+        {
+          "name": "name",
+          "viewName": "Name",
+          "type": "string"
+        },
+        {
+          "name": "namespace",
+          "viewName": "Namespace",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
