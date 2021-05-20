@@ -1,0 +1,112 @@
+{
+    "Workload": [
+        "BuildConfig",
+        "Build",
+        "CronJob",
+        "Daemon Set",
+        "Deployment",
+        "DeploymentConfig",
+        "Job",
+        "Pod",
+        "ReplicationController",
+        "ReplicaSet",
+        "StatefulSet",
+        "PersistentVolume"
+    ],
+    "OpenShift User&Group": [
+        "Group",
+        "Identity",
+        "UserIdentityMapping",
+        "User"
+    ],
+    "Template": [
+        "PodTemplate",
+        "TemplateInstance",
+        "BrokerTemplateInstance"
+    ],
+    "Storage": [
+        "PersistentVolumeClaim",
+        "VolumeSnapshot",
+        "VolumeAttachment",
+        "CSIDriver",
+        "CSINode",
+        "StorageClass",
+        "VolumeSnapshotClass",
+        "VolumeSnapshotContent"
+    ],
+    "Autoscale": [
+        "MachineAutoscaler",
+        "HorizontalPodAutoscaler",
+        "ClusterAutoscaler"
+    ],
+    "Image": [
+        "Image",
+        "ImageSignature",
+        "ImageStream",
+        "ImageStreamTag",
+        "ImageTag"
+    ],
+    "Machine": [
+        "ContainerRuntimeConfig",
+        "ControllerConfig",
+        "KubeletConfig",
+        "MachineConfigPool",
+        "MachineConfig",
+        "MachineHealthCheck",
+        "Machine",
+        "MachineSet"
+    ],
+    "Metadata": [
+        "Namespace",
+        "ConfigMap",
+        "ControllerRevision",
+        "Event",
+        "Lease"
+    ],
+    "Network": [
+        "ClusterNetwork",
+        "NetNamespace",
+        "HostSubnet",
+        "IngressClass",
+        "EndpointSlice",
+        "Endpoints",
+        "EgressNetworkPolicy",
+        "Ingress",
+        "IPPool",
+        "NetworkPolicy",
+        "Route",
+        "Service"
+    ],
+    "Node": [
+        "Node",
+        "RuntimeClass",
+        "Profile",
+        "Tuned"
+    ],
+    "Project": [
+        "Project",
+        "ProjectRequest"
+    ],
+    "Role": [
+        "ClusterRoleBinding",
+        "ClusterRole",
+        "RoleBindingRestriction",
+        "RoleBinding",
+        "Role"
+    ],
+    "Schedule&Quota": [
+        "ClusterResourceQuota",
+        "PriorityClass",
+        "AppliedClusterResourceQuota",
+        "LimitRange",
+        "ResourceQuota"
+    ],
+    "Security": [
+        "CertificateSigningRequest",
+        "RangeAllocation",
+        "SecurityContextConstraints",
+        "CredentialsRequest",
+        "Secret",
+        "ServiceAccount"
+    ]
+}
