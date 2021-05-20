@@ -41,7 +41,7 @@ Get a list of all specified objects.
 7. Field Selectors(Text) **Optional** - If specified returns only objects with matching fields. You can see more on selectors [here](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/). You can enter multiple field selctors by seperating each with a new line. When specifying multuiple selectors, returned objects must match all selectors proided.
 8. Namespace (String) **Optional** - The namespace of the objects to list. Default value is "default".
 
-## Method List Objects
+## Method Get Object
 Get information about the specified OpenShift object.
 
 ### Parameters
