@@ -39,7 +39,8 @@ async function getTypes(query, pluginSettings, actionParams){
     types = Object.keys(categoryMaps[categoryName]);
   }
   else {
-    types = categoryMaps.map(category => Object.keys(category)).flat();
+    types = Object.values(categoryMaps);
+    types = types.map(category => Object.keys(category)).flat();
   }
   return types
     .filter(typeName => query ? typeName.toLowerCase().includes(query.toLowerCase()) : true)
