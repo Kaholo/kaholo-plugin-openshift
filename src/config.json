@@ -4,10 +4,10 @@
   "imgUrl": "logo.png",
   "execProgram": "node",
   "main": "app.js",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Works with OpenShift API",
-  "settings":[
-    { 
+  "settings": [
+    {
       "name": "clusterUrl",
       "viewName": "Cluster URL",
       "type": "string"
@@ -28,7 +28,7 @@
       "name": "apply",
       "viewName": "Apply",
       "params": [
-        { 
+        {
           "name": "clusterUrl",
           "viewName": "Cluster URL",
           "type": "string"
@@ -59,7 +59,7 @@
       "name": "deleteObject",
       "viewName": "Delete Object",
       "params": [
-        { 
+        {
           "name": "clusterUrl",
           "viewName": "Cluster URL",
           "type": "string"
@@ -95,7 +95,7 @@
       "name": "listObjects",
       "viewName": "List Objects",
       "params": [
-        { 
+        {
           "name": "clusterUrl",
           "viewName": "Cluster URL",
           "type": "string"
@@ -145,7 +145,7 @@
       "name": "getObject",
       "viewName": "Get Object",
       "params": [
-        { 
+        {
           "name": "clusterUrl",
           "viewName": "Cluster URL",
           "type": "string"
@@ -186,5 +186,6 @@
         }
       ]
     }
-  ]
+  ],
+  "category": "CONTAINERS"
 }
